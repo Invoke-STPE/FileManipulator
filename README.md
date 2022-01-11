@@ -6,7 +6,7 @@ File Manipulator is a console application, that gives you a helping hand in mana
 This section will be updated as its progress.
 
 ## Roadmap
-- Rename files by utilising.
+- Rename files.
 - Remove parts of a filename.
 - Delete files.
 - Copy & Move Files.
