@@ -12,5 +12,5 @@ This section will be updated as its progress.
 - Copy & Move Files.
 - Create files.
 
-** Not yet decided features **
+**Not yet decided features**
 - Zip files in a folder.
