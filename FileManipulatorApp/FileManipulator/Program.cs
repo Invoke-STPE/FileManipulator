@@ -12,7 +12,11 @@ namespace FileManipulator
             switch (args[0].ToLower())
             {
                 case "create":
-                    Console.WriteLine("Choosen action create");
+                    Console.WriteLine("Startup: " + Environment.CurrentDirectory);
+                    //if (args[2].Contains(".")) {
+                    //    args[2] = args[2].Replace(".", Environment.CurrentDirectory);
+                    //}
+                    Console.WriteLine(FileManager.Create(args[1], args[2]));
                     break;
                 case "rename":
                     Console.WriteLine("Choosen action rename");

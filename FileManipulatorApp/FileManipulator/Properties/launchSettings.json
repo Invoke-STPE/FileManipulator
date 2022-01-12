@@ -2,7 +2,7 @@
   "profiles": {
     "FileManipulator": {
       "commandName": "Project",
-      "commandLineArgs": "-c file"
+      "commandLineArgs": "create file.txt .\\test\\"
     }
   }
 }
