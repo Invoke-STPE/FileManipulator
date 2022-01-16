@@ -14,7 +14,7 @@ namespace FileManipulator
         // string -create = "", string -dest = ".", int -amount = 1, string -append = "timestamp", bool -overwrite = false
         public static string Create(string[] args)
         {
-            CreateModel parameter = SortParameters(args);
+            CreateModel parameter = UnpackParameters(args);
 
             string destination = GetCurrentPath(parameter.Destination);
 
@@ -58,7 +58,7 @@ namespace FileManipulator
             return destination;
         }
 
-        private static CreateModel SortParameters(string[] parameters)
+        private static CreateModel UnpackParameters(string[] parameters)
         {
             CreateModel createModel = new CreateModel();
             foreach (var parameter in parameters)
