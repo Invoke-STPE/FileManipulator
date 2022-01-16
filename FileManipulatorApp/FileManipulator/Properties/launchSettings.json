@@ -2,7 +2,7 @@
   "profiles": {
     "FileManipulator": {
       "commandName": "Project",
-      "commandLineArgs": "create file.txt .\\test\\"
+      "commandLineArgs": "-create -name file.txt -dest .\\test\\"
     }
   }
 }

@@ -9,14 +9,12 @@ namespace FileManipulator
     {
         static void Main(string[] args)
         {
+            Directory.SetCurrentDirectory(@"C:\Users\Steven\Documents\");
             switch (args[0].ToLower())
             {
-                case "create":
-                    Console.WriteLine("Startup: " + Environment.CurrentDirectory);
-                    //if (args[2].Contains(".")) {
-                    //    args[2] = args[2].Replace(".", Environment.CurrentDirectory);
-                    //}
-                    Console.WriteLine(FileManager.Create(args[1], args[2]));
+                case "-create":
+                    string answer = FileManager.Create(args);
+                    Console.WriteLine(answer);
                     break;
                 case "rename":
                     Console.WriteLine("Choosen action rename");
