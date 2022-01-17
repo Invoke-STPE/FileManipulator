@@ -40,12 +40,16 @@ namespace FileManipulator
                         return $"File Created at: {fullFileDestination}";
                     }
                 }
+                else
+                {
+                    return "No name provided";
+                }
             }
             else
             {
-                return "No name provided";
+                return "Directory Does not exist";
             }
-            return "Directory Don't exist";
+            
         }
 
         private static string GetCurrentPath(string destination)
@@ -87,9 +91,6 @@ namespace FileManipulator
                     }
                 }
             }
-
-
-
             return createModel;
         }
     }
