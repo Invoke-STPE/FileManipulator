@@ -9,7 +9,8 @@ namespace FileManipulator
     {
         static void Main(string[] args)
         {
-            Directory.SetCurrentDirectory(@"C:\Users\Steven\Documents\");
+            string documentsFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            Directory.SetCurrentDirectory(documentsFolder);// Hardcoding the start path, making it easier to debug for me.
             switch (args[0].ToLower())
             {
                 case "-create":

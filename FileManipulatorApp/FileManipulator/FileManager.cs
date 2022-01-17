@@ -43,9 +43,9 @@ namespace FileManipulator
             }
             else
             {
-                return "";
+                return "No name provided";
             }
-            return "";
+            return "Directory Don't exist";
         }
 
         private static string GetCurrentPath(string destination)
